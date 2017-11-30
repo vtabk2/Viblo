@@ -1,7 +1,6 @@
 package com.asia.viblo.view.fragment.questions
 
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
 import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
@@ -46,9 +45,9 @@ class QuestionsFragment : BaseFragment(), OnUpdateQuestionData {
     }
 
     private fun initRecyclerQuestions() {
-        mQuestionAdapter = QuestionAdapter(context, mQuestionList, this, this)
-        recyclerQuestions.adapter = mQuestionAdapter
-        recyclerQuestions.layoutManager = LinearLayoutManager(context)
+//        mQuestionAdapter = QuestionAdapter(context, mQuestionList, this, this)
+//        recyclerQuestions.adapter = mQuestionAdapter
+//        recyclerQuestions.layoutManager = LinearLayoutManager(context)
     }
 
     private fun updateViewNextBackBottom() {
@@ -71,9 +70,9 @@ class QuestionsFragment : BaseFragment(), OnUpdateQuestionData {
 
     override fun onUpdateQuestionData(questionList: MutableList<Question>?) {
         if (questionList != null) {
-            mQuestionList.clear()
-            mQuestionList.addAll(questionList)
-            mQuestionAdapter.notifyDataSetChanged()
+//            mQuestionList.clear()
+//            mQuestionList.addAll(questionList)
+//            mQuestionAdapter.notifyDataSetChanged()
         }
         mProgressDialog.dismiss()
         updateViewNextBackBottom()

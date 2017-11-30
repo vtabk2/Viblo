@@ -10,6 +10,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import com.asia.viblo.R
 import com.asia.viblo.libs.recyclerview.SingleAdapter
+import com.asia.viblo.listener.BaseListener
 import com.asia.viblo.model.*
 import com.asia.viblo.model.constant.keyMaxPage
 import com.asia.viblo.model.constant.keyPagePresent
@@ -45,7 +46,7 @@ class PostFragment : BaseFragment(), OnUpdatePostData {
 
     private fun initRecyclerPost() {
         mPostAdapter = SingleAdapter(context, R.layout.item_post)
-        mPostAdapter.setPresenter(this)
+        mPostAdapter.setPresenter(BaseListener(activity))
         recyclerPost.adapter = mPostAdapter
         recyclerPost.layoutManager = LinearLayoutManager(context)
     }
