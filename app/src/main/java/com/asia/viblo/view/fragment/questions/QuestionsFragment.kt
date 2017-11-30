@@ -9,7 +9,12 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import com.asia.viblo.R
-import com.asia.viblo.model.*
+import com.asia.viblo.model.baseUrlQuestionFollowings
+import com.asia.viblo.model.baseUrlQuestionMyClips
+import com.asia.viblo.model.baseUrlQuestionNewest
+import com.asia.viblo.model.baseUrlQuestionUnsolved
+import com.asia.viblo.model.constant.keyMaxPage
+import com.asia.viblo.model.constant.keyPagePresent
 import com.asia.viblo.model.questions.Question
 import com.asia.viblo.utils.SharedPrefs
 import com.asia.viblo.view.adapter.QuestionAdapter

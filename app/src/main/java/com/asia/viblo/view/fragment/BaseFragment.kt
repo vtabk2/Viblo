@@ -9,7 +9,11 @@ import android.text.TextUtils
 import android.view.View
 import android.widget.LinearLayout
 import com.asia.viblo.R
-import com.asia.viblo.model.*
+import com.asia.viblo.model.BaseModel
+import com.asia.viblo.model.constant.extraData
+import com.asia.viblo.model.constant.extraUrl
+import com.asia.viblo.model.constant.keyMaxPage
+import com.asia.viblo.model.constant.keyPagePresent
 import com.asia.viblo.utils.SharedPrefs
 import com.asia.viblo.utils.checkErrorNetwork
 import com.asia.viblo.utils.showProgressDialog

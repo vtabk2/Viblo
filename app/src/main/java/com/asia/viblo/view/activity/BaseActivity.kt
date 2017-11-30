@@ -5,8 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.asia.viblo.model.BaseModel
-import com.asia.viblo.model.extraData
-import com.asia.viblo.model.extraUrl
+import com.asia.viblo.model.constant.extraData
+import com.asia.viblo.model.constant.extraUrl
 import com.asia.viblo.utils.showProgressDialog
 import com.asia.viblo.view.activity.author.AuthorActivity
 import com.asia.viblo.view.activity.home.OnClickComment

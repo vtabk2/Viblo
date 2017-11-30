@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter
 import com.asia.viblo.R
 import com.asia.viblo.libs.recyclerview.SingleAdapter
 import com.asia.viblo.model.*
+import com.asia.viblo.model.constant.keyMaxPage
+import com.asia.viblo.model.constant.keyPagePresent
 import com.asia.viblo.model.post.Post
 import com.asia.viblo.utils.SharedPrefs
 import com.asia.viblo.view.asyncTask.post.LoadPostAsyncTask
@@ -68,8 +70,8 @@ class PostFragment : BaseFragment(), OnUpdatePostData {
 
     override fun onUpdatePostData(postList: MutableList<Post>?) {
         if (postList != null) {
-            mPostAdapter.clear()
             mPostAdapter.setData(postList)
+            mPostAdapter.notifyDataSetChanged()
         }
         mProgressDialog.dismiss()
         updateViewNextBackBottom()

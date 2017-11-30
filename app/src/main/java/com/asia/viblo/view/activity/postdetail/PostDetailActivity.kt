@@ -5,7 +5,7 @@ import android.text.TextUtils
 import android.view.View
 import com.asia.viblo.R
 import com.asia.viblo.model.baseUrlViblo
-import com.asia.viblo.model.extraUrl
+import com.asia.viblo.model.constant.extraUrl
 import com.asia.viblo.model.post.PostDetail
 import com.asia.viblo.utils.loadAvatar
 import com.asia.viblo.utils.setTags
